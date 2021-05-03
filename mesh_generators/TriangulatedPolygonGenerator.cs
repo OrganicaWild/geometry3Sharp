@@ -61,7 +61,7 @@ namespace g3
 			rectgen.Height = (float)bounds.Height;
 			rectgen.IndicesMap = new Index2i(1, 2);
 			rectgen.UVMode = UVMode;
-			rectgen.Clockwise = true;   // MeshPolygonInserter assumes mesh faces are CW? (except code says CCW...)
+			//rectgen.Clockwise = true;   // MeshPolygonInserter assumes mesh faces are CW? (except code says CCW...)
 			rectgen.Generate();
 			DMesh3 base_mesh = new DMesh3();
 			rectgen.MakeMesh(base_mesh);
